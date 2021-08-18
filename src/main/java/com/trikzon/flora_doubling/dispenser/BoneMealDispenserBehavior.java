@@ -26,7 +26,7 @@ public class BoneMealDispenserBehavior implements DispenserBehavior {
         protected ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
             this.setSuccess(true);
             World world = pointer.getWorld();
-            BlockPos blockPos = pointer.getBlockPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
+            BlockPos blockPos = pointer.getPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
             if (!BoneMealItem.useOnFertilizable(stack, world, blockPos) && !BoneMealItem.useOnGround(stack, world, blockPos, (Direction)null)) {
                 this.setSuccess(false);
             } else if (!world.isClient) {
@@ -40,7 +40,7 @@ public class BoneMealDispenserBehavior implements DispenserBehavior {
     private static class Modified extends ItemDispenserBehavior {
         @Override
         protected ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
-            BlockPos pos = pointer.getBlockPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
+            BlockPos pos = pointer.getPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
             ServerWorld world = pointer.getWorld();
             Block block = world.getBlockState(pos).getBlock();
 
@@ -96,7 +96,7 @@ public class BoneMealDispenserBehavior implements DispenserBehavior {
 
     @Override
     public ItemStack dispense(BlockPointer pointer, ItemStack stack) {
-        BlockPos pos = pointer.getBlockPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
+        BlockPos pos = pointer.getPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
         ServerWorld world = pointer.getWorld();
         Block block = world.getBlockState(pos).getBlock();
 
