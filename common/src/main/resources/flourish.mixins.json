@@ -7,10 +7,8 @@
     "mixins": [
         "FlowerBlockMixin"
     ],
-    "client": [
-    ],
-    "server": [
-    ],
+    "client": [ ],
+    "server": [ ],
     "injectors": {
         "defaultRequire": 1
     }

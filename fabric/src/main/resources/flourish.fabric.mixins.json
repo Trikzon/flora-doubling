@@ -3,13 +3,10 @@
     "minVersion": "0.8",
     "package": "com.diontryban.flourish.mixin",
     "refmap": "${mod_id}.refmap.json",
-    "compatibilityLevel": "JAVA_17",
-    "mixins": [
-    ],
-    "client": [
-    ],
-    "server": [
-    ],
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [ ],
+    "client": [ ],
+    "server": [ ],
     "injectors": {
       "defaultRequire": 1
     }

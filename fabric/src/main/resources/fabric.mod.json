@@ -13,7 +13,7 @@
         "issues": "https://github.com/Trikzon/flourish/issues"
     },
     "license": "${license}",
-    "icon": "assets/${mod_id}/icon.png",
+    "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
@@ -28,8 +28,8 @@
         "${mod_id}.fabric.mixins.json"
     ],
     "depends": {
-        "minecraft": "^1.20.3",
-        "ash_api": "^20.4.0-alpha"
+        "minecraft": "^${minecraft_version}",
+        "ash_api": "^20.6.0-beta"
     }
 }
   

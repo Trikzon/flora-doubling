@@ -4,12 +4,9 @@
     "package": "com.diontryban.flourish.mixin",
     "refmap": "${mod_id}.refmap.json",
     "compatibilityLevel": "JAVA_17",
-    "mixins": [
-    ],
-    "client": [
-    ],
-    "server": [
-    ],
+    "mixins": [ ],
+    "client": [ ],
+    "server": [ ],
     "injectors": {
         "defaultRequire": 1
     }
