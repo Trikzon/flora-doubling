@@ -35,6 +35,8 @@ public class FlourishOptionsScreen extends ModOptionsScreen<FlourishOptions> {
 
     @Override
     protected void addOptions() {
+        if (list == null) { return; }
+
         this.list.addBig(OptionInstance.createBoolean(
                 "flourish.options.wither_rose",
                 value -> Tooltip.create(Component.translatable("flourish.options.wither_rose.tooltip")),

@@ -19,10 +19,11 @@
 
 package com.diontryban.flourish.client;
 
-import com.diontryban.ash_api.modloader.FabricClientModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 
-public class FlourishClientFabric extends FabricClientModInitializer {
-    public FlourishClientFabric() {
-        super(FlourishClient::new);
+public class FlourishClientFabric implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+        FlourishClient.init();
     }
 }

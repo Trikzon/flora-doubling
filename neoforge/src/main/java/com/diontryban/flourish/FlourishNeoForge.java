@@ -19,13 +19,9 @@
 
 package com.diontryban.flourish;
 
-import com.diontryban.ash_api.modloader.NeoForgeModInitializer;
-import com.diontryban.flourish.client.FlourishClientNeoForge;
 import net.neoforged.fml.common.Mod;
 
 @Mod(Flourish.MOD_ID)
-public class FlourishNeoForge extends NeoForgeModInitializer {
-    public FlourishNeoForge() {
-        super(Flourish.MOD_ID, Flourish::new, FlourishClientNeoForge::new);
-    }
+public class FlourishNeoForge {
+    public FlourishNeoForge() {}
 }

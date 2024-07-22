@@ -16,9 +16,7 @@
     "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
-        "main": [
-            "com.diontryban.flourish.FlourishFabric"
-        ],
+        "main": [ ],
         "client": [
             "com.diontryban.flourish.client.FlourishClientFabric"
         ]
@@ -29,7 +27,10 @@
     ],
     "depends": {
         "minecraft": "^${minecraft_version}",
-        "ash_api": "^20.6.0-beta"
+        "ash_api": "^${ash_version}"
+    },
+    "recommends": {
+        "modmenu": "^${modmenu_version}"
     }
 }
   

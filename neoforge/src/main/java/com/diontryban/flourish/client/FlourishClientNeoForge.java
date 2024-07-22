@@ -19,11 +19,13 @@
 
 package com.diontryban.flourish.client;
 
-import com.diontryban.ash_api.modloader.NeoForgeClientModInitializer;
 import com.diontryban.flourish.Flourish;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.Mod;
 
-public class FlourishClientNeoForge extends NeoForgeClientModInitializer {
+@Mod(value = Flourish.MOD_ID, dist = Dist.CLIENT)
+public class FlourishClientNeoForge {
     public FlourishClientNeoForge() {
-        super(Flourish.MOD_ID, FlourishClient::new);
+        FlourishClient.init();
     }
 }

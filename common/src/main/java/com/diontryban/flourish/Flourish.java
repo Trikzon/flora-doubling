@@ -19,20 +19,14 @@
 
 package com.diontryban.flourish;
 
-import com.diontryban.ash_api.modloader.CommonModInitializer;
 import com.diontryban.ash_api.options.ModOptionsManager;
 import com.diontryban.flourish.options.FlourishOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Flourish extends CommonModInitializer {
+public class Flourish {
     public static final String MOD_ID = "flourish";
     public static final String MOD_NAME = "Flourish";
     public static final Logger LOG = LoggerFactory.getLogger(MOD_NAME);
     public static final ModOptionsManager<FlourishOptions> OPTIONS = new ModOptionsManager<>(MOD_ID, FlourishOptions.class);
-
-    @Override
-    public void onInitialize() {
-
-    }
 }
