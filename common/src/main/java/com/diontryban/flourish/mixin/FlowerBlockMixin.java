@@ -105,7 +105,7 @@ public abstract class FlowerBlockMixin extends BushBlock implements Bonemealable
             pData *= 3;
             d1 = 1.0D;
             d0 = 3.0D;
-        } else if (blockstate.isSolidRender(pLevel, pPos)) {
+        } else if (blockstate.isSolidRender()) {
             pPos = pPos.above();
             pData *= 3;
             d0 = 3.0D;
